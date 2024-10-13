@@ -39,8 +39,8 @@ while(1):
         print("If you like coding, use Python more, and Github will also help you. Power off.")
         break
     else:
-        a=int(input("Choose your first integer: "))
-        b=int(input("Choose your second integer: "))
+        a=float(input("Choose your first number: "))
+        b=float(input("Choose your second number: "))
         print("The result is...")
         if s==1:
             add(a, b)
@@ -55,4 +55,6 @@ while(1):
         elif s==6:
             power(a, b)
         else:
+            a=int(a)
+            b=int(b)
             remainder(a, b)
